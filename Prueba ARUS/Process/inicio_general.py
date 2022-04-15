@@ -60,7 +60,7 @@ class InicioGeneral():
           mes = datetime.strptime(fecha,'%Y-%m-%d %H:%M:%S.%f').strftime('%m')
           dia = datetime.strptime(fecha,'%Y-%m-%d %H:%M:%S.%f').strftime('%d')   
           remitente = 'taydes.clondono@iumafis.edu.co'
-          destinatario = ['camilo1211@hotmail.com','taydes.clondono@iumafis.edu.co','cristian131411@gmail.com']
+          destinatario = ['listacorreo','listacorreo','listacorreo']
           # Creamos el objeto mensaje
           mensaje = MIMEMultipart()
           # Establecemos los atributos del mensaje
@@ -83,7 +83,7 @@ class InicioGeneral():
           # Ciframos la conexión
           sesion_smtp.starttls()
           # Iniciamos sesión en el servidor
-          sesion_smtp.login('taydes.clondono@iumafis.edu.co','C1020464889*')
+          sesion_smtp.login('Correo','claveCorreo')
           # Convertimos el objeto mensaje a texto
           texto = mensaje.as_string()
           # Enviamos el mensaje
